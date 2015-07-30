@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
@@ -38,18 +39,16 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'rails_12factor', group: :production
+
 group :development, :test do
   gem "dotenv-rails"
-  gem 'better_errors'
   gem "binding_of_caller"
   gem "quiet_assets"
   gem 'pry-rails'
-  gem "pry-byebug"
   gem 'shoulda'
-  gem 'did_you_mean'
   gem 'capybara'
   gem "selenium-webdriver"
-
 end
 
 gem 'faker'
