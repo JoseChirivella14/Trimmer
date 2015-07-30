@@ -4,6 +4,8 @@ default: &default
   pool: 5
   timeout: 5000
 
+  host: localhost
+
 development:
   <<: *default
   database: trimmer_development

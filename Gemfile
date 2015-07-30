@@ -41,6 +41,10 @@ gem 'spring',        group: :development
 
 gem 'rails_12factor', group: :production
 
+group :test do
+  gem 'rake'
+end
+
 group :development, :test do
   gem "dotenv-rails"
   gem "binding_of_caller"
